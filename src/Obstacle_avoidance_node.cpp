@@ -292,7 +292,7 @@ void imageCb(const sensor_msgs::ImageConstPtr& msg)
     if(right_sum>left_sum && (abs(right_sum-left_sum)>50))
     {
 
-        velocity.angular.z=-10;
+        velocity.angular.z=10;
         vel_pub.publish(velocity);
     }
 
@@ -301,7 +301,7 @@ void imageCb(const sensor_msgs::ImageConstPtr& msg)
 
 
 
-        velocity.angular.z=10;
+        velocity.angular.z=-10;
         vel_pub.publish(velocity);
     }
 
