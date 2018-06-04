@@ -1,5 +1,5 @@
 //
-// Created by kari on 18. 4. 3.
+// Created by zain on 18. 4. 3.
 //
 
 
@@ -61,7 +61,7 @@ geometry_msgs::Twist velocity;
 ros::Publisher vel_pub;
 
 
-const int MAX_COUNT = 500;
+const int MAX_COUNT = 100;
 bool needToInit = false;
 bool nightMode = false;
 
@@ -289,31 +289,26 @@ void imageCb(const sensor_msgs::ImageConstPtr& msg)
     // I use a specific magnitude threshold which when exceeded
     // triggers velocity commands to be published to Unity or actual robot
 
-    if(right_sum>left_sum && (abs(right_sum-left_sum)>50))
+    if(right_sum>left_sum && (abs(right_sum-left_sum)>15))
     {
 
-        velocity.angular.z=10;
+        velocity.angular.z=25;
         vel_pub.publish(velocity);
     }
 
-    else if(left_sum>right_sum && (abs(right_sum-left_sum)>50))
+   else if(right_sum<left_sum && (abs(right_sum-left_sum)>15))
     {
 
-
-
-        velocity.angular.z=-10;
+        velocity.angular.z=-25;
         vel_pub.publish(velocity);
-    }
-
+    }	
     else
     {
         velocity.linear.y=0;
         velocity.angular.z=0;
+        vel_pub.publish(velocity);
+        
     }
-
-
-
-
 
 
 
