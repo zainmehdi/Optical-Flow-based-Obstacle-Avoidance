@@ -14,4 +14,5 @@ https://youtu.be/YjuMZKcSccA
 - Porting it to ROS melodic and OpenCV version 4
 - Possible porting to ROS2 as well
 - Implement heuristic based optical avoidance
-
+- Field tests with actual robot
+- Introduction of reinforcement learning 
