@@ -7,3 +7,10 @@ Requires Opencv3 and ROS Kinetic.
 Details can be found on my website https://zainmehdiblog.wordpress.com/vision-based-obstacle-avoidance/
 
 https://youtu.be/YjuMZKcSccA
+
+* After a gap of two years I have decided to refine and polish this project. 
+- I will be working on development of a proper qt based GUI to allow controlling different paramaters
+- Porting it to ROS melodic and OpenCV version 4
+- Possible porting to ROS2 as well
+- Implement heuristic based optical avoidance
+
