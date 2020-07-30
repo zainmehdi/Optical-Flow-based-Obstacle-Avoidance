@@ -8,7 +8,8 @@ Details can be found on my website https://zainmehdiblog.wordpress.com/vision-ba
 
 https://youtu.be/YjuMZKcSccA
 
-* After a gap of two years I have decided to refine and polish this project. 
+ Update: 2020-07-30
+- After a gap of two years I have decided to refine and polish this project. 
 - I will be working on development of a proper qt based GUI to allow controlling different paramaters
 - Porting it to ROS melodic and OpenCV version 4
 - Possible porting to ROS2 as well
